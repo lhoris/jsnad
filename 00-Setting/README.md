@@ -49,6 +49,12 @@ PS C:\Windows\system32> Set-ExecutionPolicy RemoteSigned
 [Y] 예(Y)  [A] 모두 예(A)  [N] 아니요(N)  [L] 모두 아니요(L)  [S] 일시 중단(S)  [?] 도움말 (기본값은 "N"): y
 ```
 
+### Command Prompt 인스턴스 시작 시 chcp 65001 실행하게 레지스트리 Autorun 지정
+1. 레지스트리 편집기 regedit 실행
+2. 컴퓨터\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor 이동
+3. Autorun 문자열 값 새로 만들기
+4. 값 데이터에 `chcp 65001` 입력
+
 ## Linux
 
 
